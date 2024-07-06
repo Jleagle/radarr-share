@@ -52,37 +52,39 @@
 
     <h1>Movies</h1>
 
-    <table class="table table-hover table-striped">
-        <thead>
-        <tr>
-            <th colspan="2">Movie</th>
-            <th>Release</th>
-            <th colspan="2">Ratings</th>
-            <th>Links</th>
-        </thead>
-        {{ range .Movies }}
-            <tr class="{{if .HasFile}}table-success{{end}}">
-                <td class="small"><img src="{{.Poster}}" alt="{{.Title}}"/></td>
-                <td>
-                    {{.Title}}
-                    <small>{{.Overview}}</small>
-                </td>
-                <td>{{.Date}}</td>
-                <td class="small">
-                    <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb">
-                    {{.IMDB}}%
-                </td>
-                <td class="small">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="rt">
-                    {{.Ratings.RottenTomatoes.Value}}%
-                </td>
-                <td>
-                    <a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a> /
-                    <a href="https://www.youtube.com/watch?v={{.YouTubeTrailerID}}">Trailer</a>
-                </td>
-            </tr>
-        {{end}}
-    </table>
+    <div class="table-responsive">
+        <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th colspan="2">Movie</th>
+                <th>Release</th>
+                <th colspan="2">Ratings</th>
+                <th>Links</th>
+            </thead>
+            {{ range .Movies }}
+                <tr class="{{if .HasFile}}table-success{{end}}">
+                    <td class="small"><img src="{{.Poster}}" alt="{{.Title}}"/></td>
+                    <td>
+                        {{.Title}}
+                        <small>{{.Overview}}</small>
+                    </td>
+                    <td>{{.Date}}</td>
+                    <td class="small">
+                        <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb">
+                        {{.IMDB}}%
+                    </td>
+                    <td class="small">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="rt">
+                        {{.Ratings.RottenTomatoes.Value}}%
+                    </td>
+                    <td>
+                        <a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a> /
+                        <a href="https://www.youtube.com/watch?v={{.YouTubeTrailerID}}">Trailer</a>
+                    </td>
+                </tr>
+            {{end}}
+        </table>
+    </div>
 </div>
 
 </body>
