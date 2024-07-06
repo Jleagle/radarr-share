@@ -15,13 +15,13 @@ import (
 
 func main() {
 
-    fmt.Println("Hello World")
+	fmt.Println("Hello World")
 
 	var templates = template.Must(template.ParseFiles("main.gohtml"))
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 
-	    fmt.Println("Hello World")
+		fmt.Println("Hello World")
 
 		resp, err := http.Get("http://radarr:7878/api/v3/movie?apikey=" + os.Getenv("RADARR_API_KEY"))
 		if err != nil {
@@ -215,7 +215,7 @@ type Movie struct {
 func (m Movie) Poster() string {
 	for _, image := range m.Images {
 		if image.CoverType == "poster" {
-			return fmt.Sprintf("https://images.weserv.nl/?url=%s&output=webp&w=200", url.QueryEscape(image.RemoteUrl))
+			return fmt.Sprintf("https://images.weserv.nl/?url=%s&output=webp&h=100", url.QueryEscape(image.RemoteUrl))
 		}
 	}
 	return ""
