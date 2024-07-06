@@ -12,8 +12,24 @@
             margin: 20px 0;
         }
 
+        tr {
+            cursor: pointer;
+        }
+
         tr img {
             max-height: 30px;
+        }
+
+        tr small {
+            display: none;
+        }
+
+        tr:focus img {
+            max-height: 100px;
+        }
+
+        tr:focus small {
+            display: block;
         }
 
         tr img.rt, tr img.imdb {
@@ -47,7 +63,10 @@
         {{ range .Movies }}
             <tr class="{{if .HasFile}}table-success{{end}}">
                 <td class="small"><img src="{{.Poster}}" alt="{{.Title}}"/></td>
-                <td>{{.Title}}</td>
+                <td>
+                    {{.Title}}
+                    <small>{{.Overview}}</small>
+                </td>
                 <td>{{.Date}}</td>
                 <td class="small">
                     <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb">
