@@ -215,7 +215,7 @@ type Movie struct {
 func (m Movie) Poster() string {
 	for _, image := range m.Images {
 		if image.CoverType == "poster" {
-			return fmt.Sprintf("https://images.weserv.nl/?url=%s&output=webp&h=100", url.QueryEscape(image.RemoteUrl))
+			return fmt.Sprintf("https://images.weserv.nl/?url=%s&output=webp&h=200", url.QueryEscape(image.RemoteUrl))
 		}
 	}
 	return ""
