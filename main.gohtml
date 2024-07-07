@@ -89,10 +89,7 @@
 
 <script>
   document.getElementById("table").addEventListener("click", e => {
-    if (e.target.nodeName.toLowerCase() !== 'tr') {
-      e.target = e.target.closest("tr")
-    }
-    e.target.classList.toggle('show')
+    e.target.closest("tr").classList.toggle('show')
   });
 </script>
 
