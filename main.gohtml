@@ -67,7 +67,7 @@
             {{ range .Movies }}
                 <tr class="{{if .HasFile}}table-success{{end}}">
                     <td>
-                        <img src="{{.Poster}}" alt="{{.Title}}" small="poster" />
+                        <img src="{{.Poster}}" alt="{{.Title}}" class="poster" />
                         {{.Title}}
                         <small>{{.Overview}}</small>
                     </td>
