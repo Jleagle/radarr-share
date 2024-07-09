@@ -18,17 +18,20 @@
 
         tr img {
             max-height: 30px;
+        }
+
+        tr img.poster{
             float: left;
             margin-right: 10px;
+        }
+
+        tr.show img.poster {
+            max-height: 200px;
         }
 
         tr small {
             display: none;
             white-space: normal;
-        }
-
-        tr.show img {
-            max-height: 200px;
         }
 
         tr.show small {
@@ -67,7 +70,7 @@
             {{ range .Movies }}
                 <tr class="{{if .HasFile}}table-success{{end}}">
                     <td>
-                        <img src="{{.Poster}}" alt="{{.Title}}"/>
+                        <img src="{{.Poster}}" alt="{{.Title}}" small="poster" />
                         {{.Title}}
                         <small>{{.Overview}}</small>
                     </td>
