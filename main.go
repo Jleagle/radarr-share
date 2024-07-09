@@ -218,7 +218,7 @@ func (m Movie) Poster() string {
 			q := url.Values{}
 			q.Add("url", image.RemoteUrl)
 			q.Add("output", "webp")
-			q.Add("h", "200")
+			q.Add("h", "400")
 			q.Add("q", "100")
 			return "https://images.weserv.nl/?" + q.Encode()
 		}
