@@ -58,15 +58,15 @@
         <table class="table table-hover table-striped" id="table">
             <thead>
             <tr>
-                <th colspan="2">Movie</th>
+                <th>Movie</th>
                 <th>Release</th>
                 <th colspan="2">Ratings</th>
                 <th>Links</th>
             </thead>
             {{ range .Movies }}
                 <tr class="{{if .HasFile}}table-success{{end}}">
-                    <td class="small"><img src="{{.Poster}}" alt="{{.Title}}"/></td>
                     <td>
+                        <img src="{{.Poster}}" alt="{{.Title}}"/>
                         {{.Title}}
                         <small>{{.Overview}}</small>
                     </td>
