@@ -17,7 +17,7 @@ func main() {
 
 	var templates = template.Must(template.ParseFiles("main.gohtml"))
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("GET /", func(w http.ResponseWriter, r *http.Request) {
 
 		resp, err := http.Get("http://radarr:7878/api/v3/movie?apikey=" + os.Getenv("RADARR_API_KEY"))
 		if err != nil {
