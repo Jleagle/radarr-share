@@ -32,22 +32,33 @@ func main() {
 			return
 		}
 
-		var movies []Movie
+		var movies, released, unreleased []Movie
 		err = json.Unmarshal(b, &movies)
 		if err != nil {
 			fmt.Println(err)
 			return
 		}
 
-		movies = filter(movies, func(movie Movie) bool {
-			return movie.DigitalRelease.Year() > 2000
+		for _, movie := range movies {
+			if movie.DigitalRelease.Year() > 1000 {
+				released = append(released, movie)
+			} else {
+				unreleased = append(unreleased, movie)
+			}
+		}
+
+		sort.Slice(released, func(i, j int) bool {
+			if released[i].DigitalRelease.Unix() == released[j].DigitalRelease.Unix() {
+				return released[i].SortTitle < released[j].SortTitle
+			}
+			return released[i].DigitalRelease.Unix() > released[j].DigitalRelease.Unix()
 		})
 
-		sort.Slice(movies, func(i, j int) bool {
-			return movies[i].DigitalRelease.Unix() > movies[j].DigitalRelease.Unix()
+		sort.Slice(unreleased, func(i, j int) bool {
+			return unreleased[i].SortTitle < unreleased[j].SortTitle
 		})
 
-		err = templates.ExecuteTemplate(w, "main.gohtml", Data{Movies: movies})
+		err = templates.ExecuteTemplate(w, "main.gohtml", Data{Released: released, Unreleased: unreleased})
 		if err != nil {
 			fmt.Println(err)
 			return
@@ -62,7 +73,8 @@ func main() {
 }
 
 type Data struct {
-	Movies []Movie
+	Released   []Movie
+	Unreleased []Movie
 }
 
 func filter[T any](ss []T, test func(T) bool) (ret []T) {
