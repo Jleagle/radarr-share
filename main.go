@@ -231,7 +231,7 @@ func (m Movie) Poster() string {
 			return "https://images.weserv.nl/?" + q.Encode()
 		}
 	}
-	return ""
+	return "https://critics.io/img/movies/poster-placeholder.png"
 }
 
 func (m Movie) Date() string {
