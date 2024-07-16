@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
-            margin: 20px 0;
+            margin: 10px;
         }
 
         tr {
@@ -51,60 +51,57 @@
 </head>
 <body>
 
-<div class="container-fluid">
+<h1>Library</h1>
 
-    <h1>Library</h1>
+<table class="table table-hover table-striped" id="table1">
+    <thead>
+    <tr>
+        <th>Movie</th>
+        <th>Release</th>
+        <th colspan="2">Ratings</th>
+        <th>Links</th>
+    </thead>
+    {{ range .Released }}
+        <tr class="{{if .HasFile}}table-success{{end}}">
+            <td>
+                <img src="{{.Poster}}" alt="{{.Title}}" class="poster"/>
+                {{.SortTitle}}
+                <small>{{.Overview}}</small>
+            </td>
+            <td>{{.Date}}</td>
+            <td class="small">
+                <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb">
+                {{.IMDB}}%
+            </td>
+            <td class="small">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="tomatoes">
+                {{.Ratings.RottenTomatoes.Value}}%
+            </td>
+            <td>
+                <a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a> /
+                <a href="https://www.youtube.com/watch?v={{.YouTubeTrailerID}}">Trailer</a>
+            </td>
+        </tr>
+    {{end}}
+</table>
 
-    <table class="table table-hover table-striped" id="table1">
-        <thead>
+<h1>Some time in the future</h1>
+
+<table class="table table-hover table-striped" id="table2">
+    <thead>
+    <tr>
+        <th>Movie</th>
+    </thead>
+    {{ range .Unreleased }}
         <tr>
-            <th>Movie</th>
-            <th>Release</th>
-            <th colspan="2">Ratings</th>
-            <th>Links</th>
-        </thead>
-        {{ range .Released }}
-            <tr class="{{if .HasFile}}table-success{{end}}">
-                <td>
-                    <img src="{{.Poster}}" alt="{{.Title}}" class="poster"/>
-                    {{.SortTitle}}
-                    <small>{{.Overview}}</small>
-                </td>
-                <td>{{.Date}}</td>
-                <td class="small">
-                    <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb">
-                    {{.IMDB}}%
-                </td>
-                <td class="small">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="tomatoes">
-                    {{.Ratings.RottenTomatoes.Value}}%
-                </td>
-                <td>
-                    <a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a> /
-                    <a href="https://www.youtube.com/watch?v={{.YouTubeTrailerID}}">Trailer</a>
-                </td>
-            </tr>
-        {{end}}
-    </table>
-
-    <h1>Some time in the future</h1>
-
-    <table class="table table-hover table-striped" id="table2">
-        <thead>
-        <tr>
-            <th>Movie</th>
-        </thead>
-        {{ range .Unreleased }}
-            <tr>
-                <td>
-                    <img src="{{.Poster}}" alt="{{.Title}}" class="poster"/>
-                    {{.SortTitle}}
-                    <small>{{.Overview}}</small>
-                </td>
-            </tr>
-        {{end}}
-    </table>
-</div>
+            <td>
+                <img src="{{.Poster}}" alt="{{.Title}}" class="poster"/>
+                {{.SortTitle}}
+                <small>{{.Overview}}</small>
+            </td>
+        </tr>
+    {{end}}
+</table>
 
 <script>
   document.getElementById("table1").addEventListener("click", e => {
