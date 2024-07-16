@@ -15,13 +15,9 @@ import (
 
 func main() {
 
-	fmt.Println("Hello World")
-
 	var templates = template.Must(template.ParseFiles("main.gohtml"))
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-
-		fmt.Println("Hello World")
 
 		resp, err := http.Get("http://radarr:7878/api/v3/movie?apikey=" + os.Getenv("RADARR_API_KEY"))
 		if err != nil {
