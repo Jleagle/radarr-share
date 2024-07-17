@@ -101,6 +101,11 @@
                 {{.Title}}
                 <small>{{.Overview}}</small>
             </td>
+            <td>
+                {{if eq .IMDBID ""}}IMDB{{else}}<a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a>{{end}}
+                /
+                {{if eq .YouTubeTrailerID ""}}Trailer{{else}}<a href="https://www.youtube.com/watch?v={{.YouTubeTrailerID}}">Trailer</a>{{end}}
+            </td>
         </tr>
     {{end}}
 </table>
