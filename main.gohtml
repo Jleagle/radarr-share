@@ -111,13 +111,12 @@
 </table>
 
 <script>
-  document.getElementById("table1").addEventListener("click", e => {
-    e.target.closest("tr").classList.toggle('show')
-    e.stopPropagation()
-  });
-  document.getElementById("table2").addEventListener("click", e => {
-    e.target.closest("tr").classList.toggle('show')
-    e.stopPropagation()
+  document.body.addEventListener("click", e => {
+    const tr = e.target.closest("tr");
+    if (tr) {
+      tr.classList.toggle('show')
+      e.stopPropagation()
+    }
   });
 </script>
 
