@@ -79,9 +79,13 @@
                 {{.Ratings.RottenTomatoes.Value}}%
             </td>
             <td>
-                {{if eq .IMDBID ""}}IMDB{{else}}<a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a>{{end}}
-                /
-                {{if eq .YouTubeTrailerID ""}}Trailer{{else}}<a href="https://www.youtube.com/watch?v={{.YouTubeTrailerID}}">Trailer</a>{{end}}
+                {{if ne .IMDBID ""}}
+                    <a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a>
+                    {{if ne .YouTubeTrailerID ""}}
+                        / <a href="https://www.youtube.com/watch?v={{.YouTubeTrailerID}}">Trailer</a>
+                    {{end}}
+                {{end}}
+
             </td>
         </tr>
     {{end}}
