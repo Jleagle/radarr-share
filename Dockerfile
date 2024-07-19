@@ -7,8 +7,8 @@ RUN apk update \
 
 FROM alpine:latest AS runtime-env
 WORKDIR /root/
-COPY --from=build-env /root/movies ./
+COPY --from=build-env /root/library ./
 COPY ./main.gohtml ./
 RUN apk update \
   && apk add ca-certificates curl bash
-CMD ["./movies"]
+CMD ["./library"]
