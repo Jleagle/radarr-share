@@ -35,6 +35,8 @@ func main() {
 			fmt.Println(err)
 			return
 		}
+
+		//goland:noinspection GoUnhandledErrorResult
 		defer resp.Body.Close()
 
 		b, err := io.ReadAll(resp.Body)
