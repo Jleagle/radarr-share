@@ -123,10 +123,12 @@
 
 <script>
   document.body.addEventListener("click", e => {
-    const tr = e.target.closest("tr");
-    if (tr) {
-      tr.classList.toggle('show')
-      e.stopPropagation()
+    if (e.nodeName === "TD") {
+      const tr = e.target.closest("tr");
+      if (tr) {
+        tr.classList.toggle('show')
+      }
+      e.stopPropagation();
     }
   });
 </script>
