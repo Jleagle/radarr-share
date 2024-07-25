@@ -2,24 +2,35 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"html/template"
 	"io"
 	"net/http"
 	"net/url"
-	"os"
 	"sort"
 	"strconv"
 	"time"
 )
 
+var (
+	radarrHost = flag.String("radarr-host", "radarr", "Radarr host")
+	radarrPort = flag.Int("radarr-port", 7878, "Radarr port")
+	radarrKey  = flag.String("radarr-key", "", "Radarr key")
+	serveHost  = flag.String("serve-host", "0.0.0.0", "Serve host")
+	servePort  = flag.Int("serve-port", 7879, "Serve port")
+
+	templates = template.Must(template.ParseFiles("main.gohtml"))
+)
+
 func main() {
 
-	var templates = template.Must(template.ParseFiles("main.gohtml"))
+	flag.Parse()
 
 	http.HandleFunc("GET /", func(w http.ResponseWriter, r *http.Request) {
 
-		resp, err := http.Get("http://radarr:7878/api/v3/movie?apikey=" + os.Getenv("RADARR_API_KEY"))
+		//goland:noinspection HttpUrlsUsage
+		resp, err := http.Get(fmt.Sprintf("http://%s:%d/api/v3/movie?apikey=%s", *radarrHost, *radarrPort, *radarrKey))
 		if err != nil {
 			fmt.Println(err)
 			return
@@ -65,7 +76,7 @@ func main() {
 		}
 	})
 
-	err := http.ListenAndServe("0.0.0.0:7879", nil)
+	err := http.ListenAndServe(fmt.Sprintf("%s:%d", *serveHost, *servePort), nil)
 	if err != nil {
 		fmt.Println(err)
 		return
