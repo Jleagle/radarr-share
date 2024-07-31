@@ -60,7 +60,7 @@
 
 <h1>Library</h1>
 
-<table class="table table-hover table-striped" id="table1">
+<table class="table table-hover table-striped">
     <thead>
     <tr>
         <th>Movie</th>
@@ -68,6 +68,7 @@
         <th>Ratings</th>
         <th class="small">Links</th>
     </thead>
+    <tbody>
     {{ range .Released }}
         <tr class="{{if .HasFile}}table-success{{end}}">
             <td>
@@ -92,16 +93,6 @@
             </td>
         </tr>
     {{end}}
-</table>
-
-<h1>Some time in the future</h1>
-
-<table class="table table-hover table-striped" id="table2">
-    <thead>
-    <tr>
-        <th>Movie</th>
-        <th class="small">Links</th>
-    </thead>
     {{ range .Unreleased }}
         <tr>
             <td>
@@ -109,6 +100,8 @@
                 {{.Title}}
                 <small>{{.Overview}}</small>
             </td>
+            <td>Unknown</td>
+            <td></td>
             <td>
                 {{if ne .IMDBID ""}}
                     <a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a>
@@ -119,18 +112,19 @@
             </td>
         </tr>
     {{end}}
+    </tbody>
 </table>
 
 <script>
-  document.body.addEventListener("click", e => {
-    if (e.nodeName === "TD") {
-      const tr = e.target.closest("tr");
-      if (tr) {
-        tr.classList.toggle('show')
+  const tables = document.getElementsByTagName("tbody");
+  for (const table of tables) {
+    table.addEventListener("click", e => {
+      if (e.nodeName === "TD") {
+        e.target.closest("tr").classList.toggle('show');
       }
       e.stopPropagation();
-    }
-  });
+    });
+  }
 </script>
 
 </body>
