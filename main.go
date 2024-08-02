@@ -68,33 +68,21 @@ func main() {
 			return
 		}
 
-		var movies, released, unreleased []Movie
+		var movies []Movie
 		err = json.Unmarshal(b, &movies)
 		if err != nil {
 			fmt.Println(err)
 			return
 		}
 
-		for _, movie := range movies {
-			if movie.DigitalRelease.Year() > 1000 {
-				released = append(released, movie)
-			} else {
-				unreleased = append(unreleased, movie)
+		sort.Slice(movies, func(i, j int) bool {
+			if movies[i].DigitalRelease.Unix() == movies[j].DigitalRelease.Unix() {
+				return movies[i].SortTitle < movies[j].SortTitle
 			}
-		}
-
-		sort.Slice(released, func(i, j int) bool {
-			if released[i].DigitalRelease.Unix() == released[j].DigitalRelease.Unix() {
-				return released[i].SortTitle < released[j].SortTitle
-			}
-			return released[i].DigitalRelease.Unix() > released[j].DigitalRelease.Unix()
+			return movies[i].DigitalRelease.Unix() > movies[j].DigitalRelease.Unix()
 		})
 
-		sort.Slice(unreleased, func(i, j int) bool {
-			return unreleased[i].SortTitle < unreleased[j].SortTitle
-		})
-
-		err = templates.ExecuteTemplate(w, "main.gohtml", Data{Released: released, Unreleased: unreleased})
+		err = templates.ExecuteTemplate(w, "main.gohtml", Data{Movies: movies})
 		if err != nil {
 			fmt.Println(err)
 			return
@@ -109,8 +97,7 @@ func main() {
 }
 
 type Data struct {
-	Released   []Movie
-	Unreleased []Movie
+	Movies []Movie
 }
 
 type Movie struct {
@@ -262,9 +249,16 @@ func (m Movie) Poster() string {
 }
 
 func (m Movie) Date() string {
+	if m.DigitalRelease.IsZero() {
+		return "Unknown"
+	}
 	return m.DigitalRelease.Format("_2 Jan 2006")
 }
 
 func (m Movie) IMDB() string {
 	return strconv.FormatFloat(float64(m.Ratings.IMDB.Value)*10, 'f', 0, 64)
+}
+
+func (m Movie) HasReleaseDate() bool {
+	return m.DigitalRelease.Year() > 1000
 }

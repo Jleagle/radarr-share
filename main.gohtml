@@ -75,7 +75,7 @@
         <th class="small">Links</th>
     </thead>
     <tbody>
-    {{ range .Released }}
+    {{ range .Movies }}
         <tr class="{{if .HasFile}}table-success{{end}}">
             <td>
                 <img src="{{.Poster}}" alt="{{.Title}}" class="poster"/>
@@ -84,32 +84,15 @@
             </td>
             <td>{{.Date}}</td>
             <td>
-                <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb">
-                {{.IMDB}}%
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="tomatoes">
-                {{.Ratings.RottenTomatoes.Value}}%
-                <i class="fa-solid fa-fire popularity"></i>
-                {{.Popularity}}
-            </td>
-            <td>
-                {{if ne .IMDBID ""}}
-                    <a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a>
-                    {{if ne .YouTubeTrailerID ""}}
-                        / <a href="https://www.youtube.com/watch?v={{.YouTubeTrailerID}}">Trailer</a>
-                    {{end}}
+                {{if .HasReleaseDate}}
+                    <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb">
+                    {{.IMDB}}%
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="tomatoes">
+                    {{.Ratings.RottenTomatoes.Value}}%
+                    <i class="fa-solid fa-fire popularity"></i>
+                    {{.Popularity}}
                 {{end}}
             </td>
-        </tr>
-    {{end}}
-    {{ range .Unreleased }}
-        <tr>
-            <td>
-                <img src="{{.Poster}}" alt="{{.Title}}" class="poster"/>
-                {{.Title}}
-                <small>{{.Overview}}</small>
-            </td>
-            <td>Unknown</td>
-            <td></td>
             <td>
                 {{if ne .IMDBID ""}}
                     <a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a>
