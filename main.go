@@ -182,60 +182,60 @@ type Movie struct {
 			Type  string `json:"type"`
 		} `json:"rottenTomatoes,omitempty"`
 	} `json:"ratings"`
-	MovieFile struct {
-		MovieID      int       `json:"movieId"`
-		RelativePath string    `json:"relativePath"`
-		Path         string    `json:"path"`
-		Size         int64     `json:"size"`
-		DateAdded    time.Time `json:"dateAdded"`
-		ReleaseGroup string    `json:"releaseGroup,omitempty"`
-		Edition      string    `json:"edition"`
-		Languages    []struct {
-			ID   int    `json:"id"`
-			Name string `json:"name"`
-		} `json:"languages"`
-		Quality struct {
-			Quality struct {
-				ID         int    `json:"id"`
-				Name       string `json:"name"`
-				Source     string `json:"source"`
-				Resolution int    `json:"resolution"`
-				Modifier   string `json:"modifier"`
-			} `json:"quality"`
-			Revision struct {
-				Version  int  `json:"version"`
-				Real     int  `json:"real"`
-				IsRepack bool `json:"isRepack"`
-			} `json:"revision"`
-		} `json:"quality"`
-		CustomFormatScore int `json:"customFormatScore"`
-		IndexerFlags      int `json:"indexerFlags"`
-		MediaInfo         struct {
-			AudioBitrate          int     `json:"audioBitrate"`
-			AudioChannels         float64 `json:"audioChannels"`
-			AudioCodec            string  `json:"audioCodec"`
-			AudioLanguages        string  `json:"audioLanguages"`
-			AudioStreamCount      int     `json:"audioStreamCount"`
-			VideoBitDepth         int     `json:"videoBitDepth"`
-			VideoBitrate          int     `json:"videoBitrate"`
-			VideoCodec            string  `json:"videoCodec"`
-			VideoFps              float64 `json:"videoFps"`
-			VideoDynamicRange     string  `json:"videoDynamicRange"`
-			VideoDynamicRangeType string  `json:"videoDynamicRangeType"`
-			Resolution            string  `json:"resolution"`
-			RunTime               string  `json:"runTime"`
-			ScanType              string  `json:"scanType"`
-			Subtitles             string  `json:"subtitles"`
-		} `json:"mediaInfo"`
-		QualityCutoffNotMet bool   `json:"qualityCutoffNotMet"`
-		ID                  int    `json:"id"`
-		SceneName           string `json:"sceneName,omitempty"`
-		OriginalFilePath    string `json:"originalFilePath,omitempty"`
-	} `json:"movieFile,omitempty"`
-	Collection struct {
-		Title  string `json:"title,omitempty"`
-		TmdbID int    `json:"tmdbId"`
-	} `json:"collection,omitempty"`
+	//MovieFile struct {
+	//	MovieID      int       `json:"movieId"`
+	//	RelativePath string    `json:"relativePath"`
+	//	Path         string    `json:"path"`
+	//	Size         int64     `json:"size"`
+	//	DateAdded    time.Time `json:"dateAdded"`
+	//	ReleaseGroup string    `json:"releaseGroup,omitempty"`
+	//	Edition      string    `json:"edition"`
+	//	Languages    []struct {
+	//		ID   int    `json:"id"`
+	//		Name string `json:"name"`
+	//	} `json:"languages"`
+	//	Quality struct {
+	//		Quality struct {
+	//			ID         int    `json:"id"`
+	//			Name       string `json:"name"`
+	//			Source     string `json:"source"`
+	//			Resolution int    `json:"resolution"`
+	//			Modifier   string `json:"modifier"`
+	//		} `json:"quality"`
+	//		Revision struct {
+	//			Version  int  `json:"version"`
+	//			Real     int  `json:"real"`
+	//			IsRepack bool `json:"isRepack"`
+	//		} `json:"revision"`
+	//	} `json:"quality"`
+	//	CustomFormatScore int `json:"customFormatScore"`
+	//	IndexerFlags      int `json:"indexerFlags"`
+	//	MediaInfo         struct {
+	//		AudioBitrate          int     `json:"audioBitrate"`
+	//		AudioChannels         float64 `json:"audioChannels"`
+	//		AudioCodec            string  `json:"audioCodec"`
+	//		AudioLanguages        string  `json:"audioLanguages"`
+	//		AudioStreamCount      int     `json:"audioStreamCount"`
+	//		VideoBitDepth         int     `json:"videoBitDepth"`
+	//		VideoBitrate          int     `json:"videoBitrate"`
+	//		VideoCodec            string  `json:"videoCodec"`
+	//		VideoFps              float64 `json:"videoFps"`
+	//		VideoDynamicRange     string  `json:"videoDynamicRange"`
+	//		VideoDynamicRangeType string  `json:"videoDynamicRangeType"`
+	//		Resolution            string  `json:"resolution"`
+	//		RunTime               string  `json:"runTime"`
+	//		ScanType              string  `json:"scanType"`
+	//		Subtitles             string  `json:"subtitles"`
+	//	} `json:"mediaInfo"`
+	//	QualityCutoffNotMet bool   `json:"qualityCutoffNotMet"`
+	//	ID                  int    `json:"id"`
+	//	SceneName           string `json:"sceneName,omitempty"`
+	//	OriginalFilePath    string `json:"originalFilePath,omitempty"`
+	//} `json:"movieFile,omitempty"`
+	//Collection struct {
+	//	Title  string `json:"title,omitempty"`
+	//	TmdbID int    `json:"tmdbId"`
+	//} `json:"collection,omitempty"`
 	Popularity float64 `json:"popularity"`
 	Statistics struct {
 		MovieFileCount int      `json:"movieFileCount"`
