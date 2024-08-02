@@ -11,7 +11,11 @@ import (
 	"sort"
 	"strconv"
 	"time"
+
+	"github.com/dgraph-io/ristretto"
 )
+
+const cacheKey = "cache"
 
 var (
 	radarrHost = flag.String("radarr-host", "radarr", "Radarr host")
@@ -27,21 +31,40 @@ func main() {
 
 	flag.Parse()
 
+	cache, err := ristretto.NewCache(&ristretto.Config{})
+	if err != nil {
+		panic(err)
+	}
+
 	http.HandleFunc("GET /", func(w http.ResponseWriter, r *http.Request) {
 
-		//goland:noinspection HttpUrlsUsage
-		resp, err := http.Get(fmt.Sprintf("http://%s:%d/api/v3/movie?apikey=%s", *radarrHost, *radarrPort, *radarrKey))
-		if err != nil {
-			fmt.Println(err)
-			return
-		}
+		var b []byte
 
-		//goland:noinspection GoUnhandledErrorResult
-		defer resp.Body.Close()
+		value, found := cache.Get(cacheKey)
+		if !found {
 
-		b, err := io.ReadAll(resp.Body)
-		if err != nil {
-			fmt.Println(err)
+			//goland:noinspection HttpUrlsUsage
+			resp, err := http.Get(fmt.Sprintf("http://%s:%d/api/v3/movie?apikey=%s", *radarrHost, *radarrPort, *radarrKey))
+			if err != nil {
+				fmt.Println(err)
+				return
+			}
+
+			//goland:noinspection GoUnhandledErrorResult
+			defer resp.Body.Close()
+
+			b, err = io.ReadAll(resp.Body)
+			if err != nil {
+				fmt.Println(err)
+				return
+			}
+
+			cache.SetWithTTL(cacheKey, string(b), 1, time.Hour)
+
+		} else if val, ok := value.([]byte); ok {
+			b = val
+		} else {
+			fmt.Println("cache value is not []byte")
 			return
 		}
 
@@ -78,7 +101,7 @@ func main() {
 		}
 	})
 
-	err := http.ListenAndServe(fmt.Sprintf("%s:%d", *serveHost, *servePort), nil)
+	err = http.ListenAndServe(fmt.Sprintf("%s:%d", *serveHost, *servePort), nil)
 	if err != nil {
 		fmt.Println(err)
 		return
