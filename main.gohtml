@@ -36,7 +36,7 @@
             display: block;
         }
 
-        th.small {
+        td.small {
             width: 1%;
         }
 
@@ -48,17 +48,11 @@
         }
 
         img.imdb {
-            max-height: 15px;
+            max-height: 20px;
         }
 
         img.tomatoes {
-            max-height: 15px;
-            margin-left: 10px;
-        }
-
-        i.popularity {
-            margin-left: 10px;
-            line-height: 15px;
+            max-height: 20px;
         }
     </style>
 </head>
@@ -71,8 +65,8 @@
     <tr>
         <th>Movie</th>
         <th>Release</th>
-        <th>Ratings</th>
-        <th class="small">Links</th>
+        <th colspan="3">Ratings</th>
+        <th>Links</th>
     </thead>
     <tbody>
     {{ range .Movies }}
@@ -83,17 +77,25 @@
                 <small>{{.Overview}}</small>
             </td>
             <td>{{.Date}}</td>
-            <td>
+            <td class="small">
                 {{if .HasReleaseDate}}
                     <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb">
                     {{.IMDB}}%
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="tomatoes">
-                    {{.Ratings.RottenTomatoes.Value}}%
-                    <i class="fa-solid fa-fire popularity"></i>
-                    {{.Popularity}}
                 {{end}}
             </td>
-            <td>
+            <td class="small">
+                {{if .HasReleaseDate}}
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="tomatoes">
+                    {{.Ratings.RottenTomatoes.Value}}%
+                {{end}}
+            </td>
+            <td class="small">
+                {{if .HasReleaseDate}}
+                    <i class="fa-solid fa-fire popularity"></i>
+                    {{.Trending}}
+                {{end}}
+            </td>
+            <td class="small">
                 {{if ne .IMDBID ""}}
                     <a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a>
                     {{if ne .YouTubeTrailerID ""}}

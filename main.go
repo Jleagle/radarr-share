@@ -269,3 +269,7 @@ func (m Movie) IMDB() string {
 func (m Movie) HasReleaseDate() bool {
 	return m.DigitalRelease.Year() > 1000
 }
+
+func (m Movie) Trending() int {
+	return int(m.Popularity)
+}
