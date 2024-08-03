@@ -36,7 +36,7 @@ func main() {
 		return
 	}
 
-	cache, err := ristretto.NewCache(&ristretto.Config{})
+	cache, err := ristretto.NewCache(&ristretto.Config{NumCounters: 10, MaxCost: 10, BufferItems: 64})
 	if err != nil {
 		panic(err)
 	}
