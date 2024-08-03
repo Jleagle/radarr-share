@@ -110,7 +110,7 @@
   const tables = document.getElementsByTagName("tbody");
   for (const table of tables) {
     table.addEventListener("click", e => {
-      if (e.nodeName === "TD") {
+      if (e.target.nodeName === "TD") {
         e.target.closest("tr").classList.toggle('show');
       }
       e.stopPropagation();
