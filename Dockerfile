@@ -11,4 +11,4 @@ COPY --from=build-env /root/library ./
 COPY ./main.gohtml ./
 RUN apk update \
   && apk add ca-certificates curl bash
-CMD ["./library"]
+ENTRYPOINT ["./library"]
