@@ -31,6 +31,11 @@ func main() {
 
 	flag.Parse()
 
+	if *radarrKey == "" {
+		fmt.Println("radarr-key is required")
+		return
+	}
+
 	cache, err := ristretto.NewCache(&ristretto.Config{})
 	if err != nil {
 		panic(err)
