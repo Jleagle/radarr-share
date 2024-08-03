@@ -94,7 +94,9 @@ func main() {
 		}
 	})
 
-	err = http.ListenAndServe(fmt.Sprintf("%s:%d", *serveHost, *servePort), nil)
+	addr := fmt.Sprintf("%s:%d", *serveHost, *servePort)
+	fmt.Println("Listening on", addr)
+	err = http.ListenAndServe(addr, nil)
 	if err != nil {
 		fmt.Println(err)
 		return
