@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Library</title>
     <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==">
-    <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==">
     <style>
         body {
             margin: 10px;
@@ -47,11 +46,7 @@
             text-overflow: ellipsis;
         }
 
-        img.imdb {
-            max-height: 20px;
-        }
-
-        img.tomatoes {
+        img.rating {
             max-height: 20px;
         }
     </style>
@@ -79,21 +74,19 @@
             <td>{{.Date}}</td>
             <td class="small">
                 {{if .HasReleaseDate}}
-                    <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb" title="IMDB">
+                    <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="rating" title="IMDB">
                     {{.IMDB}}%
                 {{end}}
             </td>
             <td class="small">
                 {{if .HasReleaseDate}}
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="tomatoes" title="Rotten Tomatoes">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="rating" title="Rotten Tomatoes">
                     {{.Ratings.RottenTomatoes.Value}}%
                 {{end}}
             </td>
             <td class="small">
-                {{if .HasReleaseDate}}
-                    <i class="fa-solid fa-fire popularity" title="Popularity"></i>
-                    {{.Trending}}
-                {{end}}
+                <img src="https://static-00.iconduck.com/assets.00/fire-icon-1513x2048-1ztytpky.png" alt="Popularity" class="rating" title="Popularity">
+                {{.Trending}}
             </td>
             <td class="small">
                 {{if ne .IMDBID ""}}
