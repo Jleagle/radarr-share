@@ -257,7 +257,7 @@ func (m Movie) Poster() string {
 
 func (m Movie) Date() template.HTML {
 	if m.DigitalRelease.IsZero() {
-		return `<i class="fa-regular fa-circle-question"></i>`
+		return `Unreleased`
 	}
 	return template.HTML(m.DigitalRelease.Format("_2 Jan 2006"))
 }
