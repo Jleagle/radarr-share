@@ -255,11 +255,11 @@ func (m Movie) Poster() string {
 	return "https://critics.io/img/movies/poster-placeholder.png"
 }
 
-func (m Movie) Date() string {
+func (m Movie) Date() template.HTML {
 	if m.DigitalRelease.IsZero() {
-		return "Unknown"
+		return `<i class="fa-regular fa-circle-question"></i>`
 	}
-	return m.DigitalRelease.Format("_2 Jan 2006")
+	return template.HTML(m.DigitalRelease.Format("_2 Jan 2006"))
 }
 
 func (m Movie) IMDB() string {
