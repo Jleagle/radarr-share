@@ -79,19 +79,19 @@
             <td>{{.Date}}</td>
             <td class="small">
                 {{if .HasReleaseDate}}
-                    <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb">
+                    <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="imdb" title="IMDB">
                     {{.IMDB}}%
                 {{end}}
             </td>
             <td class="small">
                 {{if .HasReleaseDate}}
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="tomatoes">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="tomatoes" title="Rotten Tomatoes">
                     {{.Ratings.RottenTomatoes.Value}}%
                 {{end}}
             </td>
             <td class="small">
                 {{if .HasReleaseDate}}
-                    <i class="fa-solid fa-fire popularity"></i>
+                    <i class="fa-solid fa-fire popularity" title="Popularity"></i>
                     {{.Trending}}
                 {{end}}
             </td>
