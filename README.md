@@ -1,8 +1,11 @@
-# Library
+# radarr-share
 
-  library:
-    build: "library"
-    container_name: "library"
-    hostname: "library"
-    restart: "unless-stopped"
-    command: "--radarr-key=${LIBRARY_RADARR}"
+    services:
+        radarr-share:
+            image: "ghcr.io/jleagle/radarr-share:main"
+            container_name: "radarr-share"
+            hostname: "radarr-share"
+            restart: "unless-stopped"
+            entrypoint: "/root/radarr-share -radarr-key ${RADARR_KEY}"
+            ports:
+              - "7879:7879"
