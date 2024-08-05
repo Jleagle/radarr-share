@@ -101,6 +101,21 @@
 </table>
 
 <script>
+  function clickToShowInfo() {
+    for (const table of document.getElementsByTagName("tbody")) {
+      table.addEventListener("click", e => {
+        const allowed = ['TD', 'SMALL'];
+        console.log(allowed.includes(e.target.nodeName));
+        if (allowed.includes(e.target.nodeName)) {
+          e.target.closest("tr").classList.toggle('show');
+        }
+        e.stopPropagation();
+      });
+    }
+  }
+
+  clickToShowInfo();
+
   // https://github.com/tofsjonas/sortable
   document.addEventListener("click", function (c) {
     try {
@@ -143,23 +158,10 @@
           g.replaceChild(l, k)
         }
       }
+      clickToShowInfo();
     } catch (h) {
     }
   });
 </script>
-
-<script>
-  const tables = document.getElementsByTagName("tbody");
-  for (const table of tables) {
-    table.addEventListener("click", e => {
-      const allowed = ['TD', 'SMALL'];
-      if (allowed.includes(e.target.nodeName)) {
-        e.target.closest("tr").classList.toggle('show');
-      }
-      e.stopPropagation();
-    });
-  }
-</script>
-
 </body>
 </html>
