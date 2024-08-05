@@ -76,16 +76,12 @@
             </td>
             <td data-sort="{{.DigitalRelease.Unix}}">{{.Date}}</td>
             <td class="small" data-sort="{{.Ratings.IMDB.Value}}">
-                {{if .HasReleaseDate}}
-                    <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="rating" title="IMDB">
-                    {{.IMDB}}%
-                {{end}}
+                <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="rating" title="IMDB">
+                {{.IMDB}}%
             </td>
             <td class="small" data-sort="{{.Ratings.RottenTomatoes.Value}}">
-                {{if .HasReleaseDate}}
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="rating" title="Rotten Tomatoes">
-                    {{.Ratings.RottenTomatoes.Value}}%
-                {{end}}
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="rating" title="Rotten Tomatoes">
+                {{.Ratings.RottenTomatoes.Value}}%
             </td>
             <td class="small" data-sort="{{.Popularity}}">
                 <img src="https://static-00.iconduck.com/assets.00/fire-icon-1513x2048-1ztytpky.png" alt="Popularity" class="rating" title="Popularity">
