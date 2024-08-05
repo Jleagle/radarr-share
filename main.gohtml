@@ -12,7 +12,8 @@
             margin: 10px;
         }
 
-        tbody tr {
+        tbody tbody td,
+        tbody thead th:not(.no-sort) {
             cursor: pointer;
         }
 
@@ -55,36 +56,38 @@
 
 <h1>Movies</h1>
 
-<table class="table table-hover table-striped">
+<table class="table table-hover table-striped sortable">
     <thead>
     <tr>
         <th>Movie</th>
         <th>Release</th>
-        <th colspan="3">Ratings</th>
-        <th>Links</th>
+        <th>IMDB</th>
+        <th>Rotten</th>
+        <th>Trend</th>
+        <th class="no-sort">Links</th>
     </thead>
     <tbody>
     {{ range .Movies }}
         <tr class="{{if .HasFile}}table-success{{end}}">
-            <td>
+            <td data-sort="{{.SortTitle}}">
                 <img src="{{.Poster}}" alt="{{.Title}}" class="poster"/>
                 {{.Title}}
                 <small>{{.Overview}}</small>
             </td>
-            <td>{{.Date}}</td>
-            <td class="small">
+            <td data-sort="{{.DigitalRelease.Unix}}">{{.Date}}</td>
+            <td class="small" data-sort="{{.Ratings.IMDB.Value}}">
                 {{if .HasReleaseDate}}
                     <img src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj" alt="IMDB" class="rating" title="IMDB">
                     {{.IMDB}}%
                 {{end}}
             </td>
-            <td class="small">
+            <td class="small" data-sort="{{.Ratings.RottenTomatoes.Value}}">
                 {{if .HasReleaseDate}}
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png" alt="Rotten Tomatoes" class="rating" title="Rotten Tomatoes">
                     {{.Ratings.RottenTomatoes.Value}}%
                 {{end}}
             </td>
-            <td class="small">
+            <td class="small" data-sort="{{.Popularity}}">
                 <img src="https://static-00.iconduck.com/assets.00/fire-icon-1513x2048-1ztytpky.png" alt="Popularity" class="rating" title="Popularity">
                 {{.Trending}}
             </td>
@@ -100,6 +103,54 @@
     {{end}}
     </tbody>
 </table>
+
+<script>
+  // https://github.com/tofsjonas/sortable
+  document.addEventListener("click", function (c) {
+    try {
+      function h(b, a) {
+        return b.nodeName === a ? b : h(b.parentNode, a)
+      }
+
+      const v = c.shiftKey || c.altKey, d = h(c.target, "TH"), m = d.parentNode, n = m.parentNode, g = n.parentNode;
+
+      function p(b) {
+        let a;
+        return v ? b.dataset.sortAlt : null !== (a = b.dataset.sort) && void 0 !== a ? a : b.textContent
+      }
+
+      if ("THEAD" === n.nodeName && g.classList.contains("sortable") && !d.classList.contains("no-sort")) {
+        let q, f = m.cells, r = +d.dataset.sortTbr;
+        for (c = 0; c < f.length; c++) f[c] === d ? q = +d.dataset.sortCol || c : f[c].setAttribute("aria-sort", "none");
+        f = "descending";
+        if ("descending" === d.getAttribute("aria-sort") || g.classList.contains("asc") && "ascending" !== d.getAttribute("aria-sort")) f = "ascending";
+        d.setAttribute("aria-sort", f);
+        const w = "ascending" === f, x = g.classList.contains("n-last"), t = function (b, a, e) {
+          a = p(a.cells[e]);
+          b = p(b.cells[e]);
+          if (x) {
+            if ("" === a && "" !== b) return -1;
+            if ("" === b && "" !== a) return 1
+          }
+          e = +a - +b;
+          a = isNaN(e) ? a.localeCompare(b) : e;
+          return w ? -a : a
+        };
+        for (c = 0; c < g.tBodies.length; c++) {
+          const k = g.tBodies[c], u = [].slice.call(k.rows, 0);
+          u.sort(function (b, a) {
+            const e = t(b, a, q);
+            return 0 !== e || isNaN(r) ? e : t(b, a, r)
+          });
+          const l = k.cloneNode();
+          l.append.apply(l, u);
+          g.replaceChild(l, k)
+        }
+      }
+    } catch (h) {
+    }
+  });
+</script>
 
 <script>
   const tables = document.getElementsByTagName("tbody");
