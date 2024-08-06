@@ -1,4 +1,4 @@
-module github.com/Jleagle/smart-home/library
+module github.com/Jleagle/radarr-share
 
 go 1.22.4
 

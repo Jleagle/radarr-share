@@ -7,8 +7,8 @@ RUN apk update \
 
 FROM alpine:latest AS runtime-env
 WORKDIR /root/
-COPY --from=build-env /root/library ./
+COPY --from=build-env /root/radarr-share ./
 COPY ./main.gohtml ./
 RUN apk update \
   && apk add ca-certificates curl bash
-ENTRYPOINT ["./library"]
+ENTRYPOINT ["./radarr-share"]
