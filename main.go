@@ -84,10 +84,11 @@ func main() {
 		}
 
 		sort.Slice(movies, func(i, j int) bool {
-			if movies[i].DigitalRelease.Unix() == movies[j].DigitalRelease.Unix() {
-				return movies[i].SortTitle < movies[j].SortTitle
-			}
-			return movies[i].DigitalRelease.Unix() > movies[j].DigitalRelease.Unix()
+			return movies[i].SortTitle < movies[j].SortTitle
+			//if movies[i].DigitalRelease.Unix() == movies[j].DigitalRelease.Unix() {
+			//	return movies[i].SortTitle < movies[j].SortTitle
+			//}
+			//return movies[i].DigitalRelease.Unix() > movies[j].DigitalRelease.Unix()
 		})
 
 		err = templates.ExecuteTemplate(w, "main.gohtml", Data{Movies: movies})
