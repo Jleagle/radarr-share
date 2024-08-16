@@ -2,7 +2,10 @@ module github.com/Jleagle/radarr-share
 
 go 1.22.4
 
-require github.com/dgraph-io/ristretto v0.1.1
+require (
+	github.com/dgraph-io/ristretto v0.1.1
+	golang.org/x/text v0.17.0
+)
 
 require (
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect

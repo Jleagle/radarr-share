@@ -13,6 +13,8 @@ import (
 	"time"
 
 	"github.com/dgraph-io/ristretto"
+	"golang.org/x/text/language"
+	"golang.org/x/text/message"
 )
 
 const cacheKey = "cache"
@@ -25,6 +27,7 @@ var (
 	servePort  = flag.Int("serve-port", 7879, "Serve port")
 
 	templates = template.Must(template.ParseFiles("main.gohtml"))
+	printer   = message.NewPrinter(language.English)
 )
 
 func main() {
@@ -270,6 +273,6 @@ func (m Movie) HasReleaseDate() bool {
 	return m.DigitalRelease.Year() > 1000
 }
 
-func (m Movie) Trending() int {
-	return int(m.Popularity)
+func (m Movie) Trending() string {
+	return printer.Sprintf("%d", int(m.Popularity))
 }
