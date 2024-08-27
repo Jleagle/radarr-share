@@ -1,6 +1,7 @@
 package main
 
 import (
+	"cmp"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -8,7 +9,7 @@ import (
 	"io"
 	"net/http"
 	"net/url"
-	"sort"
+	"slices"
 	"strconv"
 	"time"
 
@@ -83,12 +84,11 @@ func main() {
 			return
 		}
 
-		sort.Slice(movies, func(i, j int) bool {
-			return movies[i].SortTitle < movies[j].SortTitle
-			//if movies[i].DigitalRelease.Unix() == movies[j].DigitalRelease.Unix() {
-			//	return movies[i].SortTitle < movies[j].SortTitle
-			//}
-			//return movies[i].DigitalRelease.Unix() > movies[j].DigitalRelease.Unix()
+		slices.SortFunc(movies, func(a, b Movie) int {
+			return cmp.Or(
+				-cmp.Compare(a.DigitalRelease.Unix(), b.DigitalRelease.Unix()),
+				cmp.Compare(a.SortTitle, b.SortTitle),
+			)
 		})
 
 		err = templates.ExecuteTemplate(w, "main.gohtml", Data{Movies: movies})
