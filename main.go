@@ -88,6 +88,7 @@ func main() {
 		slices.SortFunc(movies, func(a, b Movie) int {
 			return cmp.Or(
 				-cmp.Compare(a.DigitalRelease.Unix(), b.DigitalRelease.Unix()),
+				-cmp.Compare(a.PhysicalRelease.Unix(), b.PhysicalRelease.Unix()),
 				cmp.Compare(a.SortTitle, b.SortTitle),
 			)
 		})
