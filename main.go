@@ -266,10 +266,16 @@ func (m Movie) Poster() string {
 }
 
 func (m Movie) Date() template.HTML {
-	if m.DigitalRelease.IsZero() {
-		return "Unknown"
+
+	if m.DigitalRelease.Unix() > 0 {
+		return template.HTML(m.DigitalRelease.Format("_2 Jan 2006"))
 	}
-	return template.HTML(m.DigitalRelease.Format("_2 Jan 2006"))
+
+	if m.PhysicalRelease.Unix() > 0 {
+		return template.HTML(m.PhysicalRelease.Format("_2 Jan 2006"))
+	}
+
+	return "Unknown"
 }
 
 func (m Movie) IMDB() string {
