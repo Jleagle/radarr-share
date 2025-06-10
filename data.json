@@ -1,0 +1,1674 @@
+[
+  {
+    "title": "Avengers: Doomsday",
+    "originalTitle": "Avengers: Doomsday",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Marvel Studios' Avengers: The Kang Dynasty",
+        "id": 11721
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Avengers: The Kang Dynasty",
+        "id": 11722
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "어벤져스 5",
+        "id": 11723
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "הנוקמים: שושלת קאנג",
+        "id": 11724
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Avengers 5: Triều Đại Của Kang",
+        "id": 11725
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Bosszúállók: A Kang-dinasztia",
+        "id": 11726
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Мстители: Династия Канга",
+        "id": 11727
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Месники: Династія Канга",
+        "id": 11728
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Qasoskorlar: Kang sulolasi",
+        "id": 11729
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "הנוקמים: דומסדיי",
+        "id": 11730
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "הנוקמים: יום הדין",
+        "id": 11731
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Avengers 5",
+        "id": 11732
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Marvel Studios' Avengers: Doomsday",
+        "id": 11733
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Վրիժառուները ։ Դումսդեյ",
+        "id": 11861
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1255,
+        "title": "Vengadores: Doomsday",
+        "id": 12014
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "avengers doomsday",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "The Avengers, Wakandans, Fantastic Four, Thunderbolts, and X-Men all fight against Doctor Doom. Plot TBA.",
+    "inCinemas": "2026-12-18T00:00:00Z",
+    "releaseDate": "2027-03-18T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1061/poster.jpg?lastWrite=638791840843997363",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/6eB2oh1SplddsZYCdayrIdrIGLd.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1061/fanart.jpg?lastWrite=638834393161782548",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/s4EPSbpbnf20oWq64lKRn28Yx7J.jpg"
+      }
+    ],
+    "website": "https://www.marvel.com/movies/avengers-doomsday",
+    "year": 2026,
+    "youTubeTrailerId": "",
+    "studio": "Marvel Studios",
+    "path": "/movies/Avengers Doomsday (2026)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/Avengers Doomsday (2026)",
+    "runtime": 0,
+    "cleanTitle": "avengersdoomsday",
+    "imdbId": "tt21357150",
+    "tmdbId": 1003596,
+    "titleSlug": "1003596",
+    "rootFolderPath": "/movies",
+    "genres": [
+      "Science Fiction"
+    ],
+    "keywords": [
+      "superhero",
+      "based on comic",
+      "sequel",
+      "superhero team",
+      "marvel cinematic universe (mcu)"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:48:01Z",
+    "ratings": {
+      "tmdb": {
+        "votes": 0,
+        "value": 0,
+        "type": "user"
+      }
+    },
+    "collection": {
+      "title": "The Avengers Collection",
+      "tmdbId": 86311
+    },
+    "popularity": 8.6646,
+    "lastSearchTime": "2025-06-06T22:42:55Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1061
+  },
+  {
+    "title": "Avengers: Secret Wars",
+    "originalTitle": "Avengers: Secret Wars",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1256,
+        "title": "Marvel Studios' Avengers: Secret Wars",
+        "id": 11735
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1256,
+        "title": "Avengers 6",
+        "id": 11736
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1256,
+        "title": "어벤져스 6",
+        "id": 11737
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1256,
+        "title": "נוקמים 6: סיקרט וורס",
+        "id": 11738
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1256,
+        "title": "הנוקמים 6: המלחמות הסודיות",
+        "id": 11739
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1256,
+        "title": "Avengers 6: Cuộc Chiến Bí Mật",
+        "id": 11740
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1256,
+        "title": "Bosszúállók: Titkos háború",
+        "id": 11741
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1256,
+        "title": "Мстители: Секретные войны",
+        "id": 11742
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1256,
+        "title": "Avengers: Tajné vojny",
+        "id": 11743
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "avengers secret wars",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "An upcoming film in Phase 6 of the Marvel Cinematic Universe (MCU) and the finale of The Multiverse Saga. Plot TBA.",
+    "inCinemas": "2027-12-15T00:00:00Z",
+    "releaseDate": "2028-03-14T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1062/poster.jpg?lastWrite=638810067274622663",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1062/fanart.jpg?lastWrite=638834393166702571",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/h0rLRgh21cQS2Mrou9fEcZQuaku.jpg"
+      }
+    ],
+    "website": "https://www.marvel.com/movies/avengers-secret-wars",
+    "year": 2027,
+    "youTubeTrailerId": "",
+    "studio": "Marvel Studios",
+    "path": "/movies/Avengers Secret Wars (2027)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/Avengers Secret Wars (2027)",
+    "runtime": 0,
+    "cleanTitle": "avengerssecretwars",
+    "imdbId": "tt21361444",
+    "tmdbId": 1003598,
+    "titleSlug": "1003598",
+    "rootFolderPath": "/movies",
+    "genres": [
+      "Science Fiction"
+    ],
+    "keywords": [
+      "superhero",
+      "based on comic",
+      "sequel",
+      "superhero team",
+      "marvel cinematic universe (mcu)"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:48:12Z",
+    "ratings": {
+      "tmdb": {
+        "votes": 0,
+        "value": 0,
+        "type": "user"
+      }
+    },
+    "collection": {
+      "title": "The Avengers Collection",
+      "tmdbId": 86311
+    },
+    "popularity": 5.7941,
+    "lastSearchTime": "2025-06-07T03:43:41Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1062
+  },
+  {
+    "title": "Superman",
+    "originalTitle": "Superman",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1287,
+        "title": "Superman: Legacy",
+        "id": 11744
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1287,
+        "title": "スーパーマン:レガシー",
+        "id": 11745
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1287,
+        "title": "סופרמן: מורשת",
+        "id": 11746
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1287,
+        "title": "超人",
+        "id": 11747
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1287,
+        "title": "سوبرمان",
+        "id": 12019
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1287,
+        "title": "စူပါမန်း",
+        "id": 12125
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "superman",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "Superman, a journalist in Metropolis, embarks on a journey to reconcile his Kryptonian heritage with his human upbringing as Clark Kent.",
+    "inCinemas": "2025-07-09T00:00:00Z",
+    "releaseDate": "2025-10-07T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1063/poster.jpg?lastWrite=638847396361955631",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1063/fanart.jpg?lastWrite=638836127514810834",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/mMS24Uh4AsgkchTFFQaOwFnFDnO.jpg"
+      }
+    ],
+    "website": "https://www.superman.com",
+    "year": 2025,
+    "youTubeTrailerId": "Ox8ZLF6cGM0",
+    "studio": "DC Studios",
+    "path": "/movies/Superman (2025)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/Superman (2025)",
+    "runtime": 129,
+    "cleanTitle": "superman",
+    "imdbId": "tt5950044",
+    "tmdbId": 1061474,
+    "titleSlug": "1061474",
+    "rootFolderPath": "/movies",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
+    ],
+    "keywords": [
+      "hero",
+      "superhero",
+      "villain",
+      "based on comic",
+      "aftercreditsstinger",
+      "duringcreditsstinger",
+      "supervillain",
+      "dc universe (dcu)"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:48:38Z",
+    "ratings": {
+      "tmdb": {
+        "votes": 0,
+        "value": 0,
+        "type": "user"
+      }
+    },
+    "popularity": 23.9001,
+    "lastSearchTime": "2025-06-06T18:57:19Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1063
+  },
+  {
+    "title": "Zootopia 2",
+    "originalTitle": "Zootopia 2",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1288,
+        "title": "動物方城市2",
+        "id": 11748
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1288,
+        "title": "زوتروبوليس ٢",
+        "id": 11977
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1288,
+        "title": "زوتروبوليس 2",
+        "id": 11978
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "zootopia 2",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "Detectives Judy Hopps and Nick Wilde find themselves on the twisting trail of a mysterious reptile who arrives in Zootopia and turns the mammal metropolis upside down.",
+    "inCinemas": "2025-11-26T00:00:00Z",
+    "releaseDate": "2026-02-24T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1064/poster.jpg?lastWrite=638849130592214201",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/vAtyR5471YBzBb2FrCiCTrxwv3E.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1064/fanart.jpg?lastWrite=638847396363115637",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/iAMxwAtriQkAOTt1jeGER0oLMNN.jpg"
+      }
+    ],
+    "website": "",
+    "year": 2025,
+    "youTubeTrailerId": "xo4rkcC7kFc",
+    "studio": "Walt Disney Animation Studios",
+    "path": "/movies/Zootopia 2 (2025)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/Zootopia 2 (2025)",
+    "runtime": 0,
+    "cleanTitle": "zootopia2",
+    "imdbId": "tt26443597",
+    "tmdbId": 1084242,
+    "titleSlug": "1084242",
+    "rootFolderPath": "/movies",
+    "genres": [
+      "Family",
+      "Comedy",
+      "Adventure",
+      "Animation"
+    ],
+    "keywords": [
+      "sequel",
+      "anthropomorphism"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:49:50Z",
+    "ratings": {
+      "tmdb": {
+        "votes": 0,
+        "value": 0,
+        "type": "user"
+      }
+    },
+    "collection": {
+      "title": "Zootopia Collection",
+      "tmdbId": 1084247
+    },
+    "popularity": 8.6131,
+    "lastSearchTime": "2025-06-07T04:43:49Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1064
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "originalTitle": "The Mandalorian and Grogu",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1290,
+        "title": "Мандалорец и Грогу",
+        "id": 11749
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1290,
+        "title": "Star Wars: The Mandalorian and Grogu",
+        "id": 11750
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "mandalorian grogu",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "The Mandalorian, a lone bounty hunter, is tasked with capturing Grogu, a mysterious and adorable creature. Instead, he forms a strong bond with Grogu and strives to protect him from various threats, exploring his evolving purpose in a post-Empire galaxy.",
+    "inCinemas": "2026-05-20T00:00:00Z",
+    "releaseDate": "2026-08-18T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1065/poster.jpg?lastWrite=638849130658414564",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/lVVRSj9tKZuJJDQ93H2p1osDa1V.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1065/fanart.jpg?lastWrite=638791842063281831",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/p5TWcM1wguZhrp5iGXjrV3XuAcJ.jpg"
+      }
+    ],
+    "website": "",
+    "year": 2026,
+    "youTubeTrailerId": "",
+    "studio": "Lucasfilm Ltd.",
+    "path": "/movies/The Mandalorian & Grogu (2026)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/The Mandalorian & Grogu (2026)",
+    "runtime": 0,
+    "cleanTitle": "themandaloriangrogu",
+    "imdbId": "tt30825738",
+    "tmdbId": 1228710,
+    "titleSlug": "1228710",
+    "rootFolderPath": "/movies",
+    "genres": [
+      "Adventure",
+      "Science Fiction"
+    ],
+    "keywords": [
+      "based on tv series"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:50:03Z",
+    "ratings": {
+      "tmdb": {
+        "votes": 0,
+        "value": 0,
+        "type": "user"
+      }
+    },
+    "popularity": 2.1984,
+    "lastSearchTime": "2025-06-06T23:15:13Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1065
+  },
+  {
+    "title": "How to Train Your Dragon",
+    "originalTitle": "How to Train Your Dragon",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1291,
+        "title": "Draktränaren",
+        "id": 11751
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1291,
+        "title": "مربی اژدها",
+        "id": 11834
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1291,
+        "title": "Cómo entrenar a tu dragón",
+        "id": 12104
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1291,
+        "title": "Como Treinares o Teu Dragão",
+        "id": 12117
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1291,
+        "title": "Drachenzähmen leicht gemacht",
+        "id": 12126
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1291,
+        "title": "新·驯龙高手",
+        "id": 12127
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1291,
+        "title": "Sådan træner du din drage",
+        "id": 12128
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1291,
+        "title": "Näin koulutat lohikäärmeesi",
+        "id": 12129
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1291,
+        "title": "馴龍記",
+        "id": 12130
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "how to train your dragon",
+    "sizeOnDisk": 0,
+    "status": "inCinemas",
+    "overview": "On the rugged isle of Berk, where Vikings and dragons have been bitter enemies for generations, Hiccup stands apart, defying centuries of tradition when he befriends Toothless, a feared Night Fury dragon. Their unlikely bond reveals the true nature of dragons, challenging the very foundations of Viking society.",
+    "inCinemas": "2025-06-06T00:00:00Z",
+    "releaseDate": "2025-09-04T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1066/poster.jpg?lastWrite=638846529089749233",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/3lwlJL8aW6Wor9tKvME8VoMnBkn.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1066/fanart.jpg?lastWrite=638791842350962952",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/7HqLLVjdjhXS0Qoz1SgZofhkIpE.jpg"
+      }
+    ],
+    "website": "https://www.welcometoberk.com/",
+    "year": 2025,
+    "youTubeTrailerId": "OWEq2Pf8qpk",
+    "studio": "DreamWorks Animation",
+    "path": "/movies/How to Train Your Dragon (2025)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/How to Train Your Dragon (2025)",
+    "runtime": 125,
+    "cleanTitle": "howtotrainyourdragon",
+    "imdbId": "tt26743210",
+    "tmdbId": 1087192,
+    "titleSlug": "1087192",
+    "rootFolderPath": "/movies",
+    "certification": "PG",
+    "genres": [
+      "Action",
+      "Family",
+      "Fantasy"
+    ],
+    "keywords": [
+      "flying",
+      "vikings (norsemen)",
+      "remake",
+      "dragon",
+      "battle",
+      "warrior",
+      "live action remake",
+      "based on young adult novel",
+      "fantasy",
+      "provocative",
+      "egotistical",
+      "cruel",
+      "disrespectful"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:50:32Z",
+    "ratings": {
+      "tmdb": {
+        "votes": 55,
+        "value": 7.355,
+        "type": "user"
+      },
+      "trakt": {
+        "votes": 55,
+        "value": 7.61818,
+        "type": "user"
+      }
+    },
+    "collection": {
+      "title": "How to Train Your Dragon (Live-Action) Collection",
+      "tmdbId": 1458864
+    },
+    "popularity": 119.6814,
+    "lastSearchTime": "2025-06-07T01:43:23Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1066
+  },
+  {
+    "title": "Toy Story 5",
+    "originalTitle": "Toy Story 5",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 951,
+        "title": "Priča o igračkama 5",
+        "id": 11752
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 951,
+        "title": "Oyuncaq Hekayəsi 5",
+        "id": 11753
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 951,
+        "title": "玩具總動員5",
+        "id": 11754
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "toy story 5",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "Buzz, Woody, Jessie and the rest of the gang's jobs get exponentially harder when they go head to head with an all-new threat to playtime: tech.",
+    "inCinemas": "2026-06-17T00:00:00Z",
+    "releaseDate": "2026-09-15T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1067/poster.jpg?lastWrite=638791842513723597",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/i4UtdsApMwXQkGD2mBDroJSJZsk.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1067/fanart.jpg?lastWrite=638791842514123598",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/yCXvf4C9cKnTSOJtuNRGqB0CUFV.jpg"
+      }
+    ],
+    "website": "https://pixarmovies.com/toy-story-5",
+    "year": 2026,
+    "youTubeTrailerId": "",
+    "studio": "Pixar",
+    "path": "/movies/Toy Story 5 (2026)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/Toy Story 5 (2026)",
+    "runtime": 0,
+    "cleanTitle": "toystory5",
+    "imdbId": "tt29355505",
+    "tmdbId": 1084244,
+    "titleSlug": "1084244",
+    "rootFolderPath": "/movies",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Family",
+      "Comedy"
+    ],
+    "keywords": [],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:50:48Z",
+    "ratings": {
+      "tmdb": {
+        "votes": 0,
+        "value": 0,
+        "type": "user"
+      }
+    },
+    "collection": {
+      "title": "Toy Story Collection",
+      "tmdbId": 10194
+    },
+    "popularity": 3.5993,
+    "lastSearchTime": "2025-06-06T20:27:34Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1067
+  },
+  {
+    "title": "F1 The Movie",
+    "originalTitle": "F1 The Movie",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "Apex",
+        "id": 11755
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "Formula 1",
+        "id": 11756
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "Formula One",
+        "id": 11757
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "弯道峰点",
+        "id": 11758
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "弯心",
+        "id": 11759
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "一级方程式",
+        "id": 11760
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "포뮬라 원",
+        "id": 11761
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "포뮬라 1",
+        "id": 11762
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "에프원",
+        "id": 11763
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "布萊德彼特之F1",
+        "id": 11764
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1：赛道风云",
+        "id": 11765
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "פורמולה 1",
+        "id": 11795
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1：ザ・ムービー",
+        "id": 11969
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1 Der Film",
+        "id": 11984
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1 Il Film",
+        "id": 11985
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1: La película",
+        "id": 11986
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1 더 무비",
+        "id": 11987
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1®",
+        "id": 12020
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1®／エフワン",
+        "id": 12082
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1：狂飙飞车",
+        "id": 12152
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1電影",
+        "id": 12153
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1292,
+        "title": "F1: הסרט",
+        "id": 12158
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "f1 movie",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
+    "inCinemas": "2025-06-25T00:00:00Z",
+    "releaseDate": "2025-09-23T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1068/poster.jpg?lastWrite=638850864716428491",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/9PXZIUsSDh4alB80jheWX4fhZmy.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1068/fanart.jpg?lastWrite=638798698477412675",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/8PHTO4a11JuZwYko7QPBUWq45wJ.jpg"
+      }
+    ],
+    "website": "https://www.f1themovie.com",
+    "year": 2025,
+    "youTubeTrailerId": "ge_ABjtYx88",
+    "studio": "Plan B Entertainment",
+    "path": "/movies/F1 (2025)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/F1 (2025)",
+    "runtime": 156,
+    "cleanTitle": "f1movie",
+    "imdbId": "tt16311594",
+    "tmdbId": 911430,
+    "titleSlug": "911430",
+    "rootFolderPath": "/movies",
+    "certification": "12A",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "keywords": [
+      "based on true story",
+      "rookie",
+      "formula one (f1)",
+      "motorsport",
+      "car racing"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:50:54Z",
+    "ratings": {
+      "tmdb": {
+        "votes": 0,
+        "value": 0,
+        "type": "user"
+      }
+    },
+    "popularity": 17.7962,
+    "lastSearchTime": "2025-06-07T02:13:28Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1068
+  },
+  {
+    "title": "Spider-Man: Brand New Day",
+    "originalTitle": "Spider-Man: Brand New Day",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 635,
+        "title": "Spider-Man 4",
+        "id": 11767
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 635,
+        "title": "스파이더맨 4",
+        "id": 11768
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 635,
+        "title": "蜘蛛侠4：英雄重生",
+        "id": 11789
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "spider man brand new day",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "The fourth installment in the MCU Spider-Man franchise. Plot TBA.",
+    "inCinemas": "2026-07-30T00:00:00Z",
+    "releaseDate": "2026-10-28T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1069/poster.jpg?lastWrite=638791842666564208",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/9JCQtDCSpPR2ld55yNlEg1VwcQo.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1069/fanart.jpg?lastWrite=638791842666724209",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/63JYqhefGrbVg0YqZ3xWqn0pwT2.jpg"
+      }
+    ],
+    "website": "",
+    "year": 2026,
+    "youTubeTrailerId": "",
+    "studio": "Marvel Studios",
+    "path": "/movies/Spider-Man Brand New Day (2026)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/Spider-Man Brand New Day (2026)",
+    "runtime": 0,
+    "cleanTitle": "spidermanbrandnewday",
+    "imdbId": "tt22084616",
+    "tmdbId": 969681,
+    "titleSlug": "969681",
+    "rootFolderPath": "/movies",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "keywords": [
+      "based on comic",
+      "marvel cinematic universe (mcu)"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:51:05Z",
+    "ratings": {
+      "tmdb": {
+        "votes": 0,
+        "value": 0,
+        "type": "user"
+      }
+    },
+    "collection": {
+      "title": "Spider-Man (MCU) Collection",
+      "tmdbId": 531241
+    },
+    "popularity": 4.7195,
+    "lastSearchTime": "2025-06-07T02:28:27Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1069
+  },
+  {
+    "title": "Final Destination Bloodlines",
+    "originalTitle": "Final Destination Bloodlines",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Final Destination 6: Bloodlines",
+        "id": 11769
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Destino Final 6: Linajes",
+        "id": 11770
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "파이널 데스티네이션 6",
+        "id": 11771
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Destination ultime liens de sang",
+        "id": 11772
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Premonição 6: Laços de Sangue",
+        "id": 11991
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Premonição 6",
+        "id": 11992
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Destino final: Lazos de sangre",
+        "id": 11993
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "死神来了6：血脉诅咒",
+        "id": 11994
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Végső állomás: Vérvonalak",
+        "id": 11995
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "फाइनल डेस्टिनेशन: ब्लडलाइन्स",
+        "id": 11996
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Пункт назначения: Узы крови",
+        "id": 11997
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Galutinis tikslas. Kraujo linija",
+        "id": 11998
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Oszukać przeznaczenie: Więzy krwi",
+        "id": 11999
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "O Último Destino: Descendência",
+        "id": 12000
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Пункт назначения: Кровные узы",
+        "id": 12001
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Последња екскурзија: Наслеђа",
+        "id": 12002
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "絕命終結站 血脈",
+        "id": 12003
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Son Durak: Kan Bağı",
+        "id": 12004
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Lưỡi Hái Tử Thần: Huyết Thống",
+        "id": 12005
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "Destino Final 6: Lazos De Sangre",
+        "id": 12006
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "අවසාන ගමනාන්තය 6: රුධිර රේඛා",
+        "id": 12047
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1293,
+        "title": "الوجهة النهائية 6: خطوط الدم",
+        "id": 12050
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "final destination bloodlines",
+    "sizeOnDisk": 0,
+    "status": "inCinemas",
+    "overview": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
+    "inCinemas": "2025-05-14T00:00:00Z",
+    "digitalRelease": "2025-06-17T00:00:00Z",
+    "releaseDate": "2025-06-17T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1070/poster.jpg?lastWrite=638830926381398053",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1070/fanart.jpg?lastWrite=638837864570402370",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/uIpJPDNFoeX0TVml9smPrs9KUVx.jpg"
+      }
+    ],
+    "website": "https://www.finaldestinationmovie.com",
+    "year": 2025,
+    "youTubeTrailerId": "xitSoRbHJ50",
+    "studio": "New Line Cinema",
+    "path": "/movies/Final Destination Bloodlines (2025)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/Final Destination Bloodlines (2025)",
+    "runtime": 110,
+    "cleanTitle": "finaldestinationbloodlines",
+    "imdbId": "tt9619824",
+    "tmdbId": 574475,
+    "titleSlug": "574475",
+    "rootFolderPath": "/movies",
+    "certification": "15",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "keywords": [
+      "restaurant",
+      "gore",
+      "sequel",
+      "premonition",
+      "fate",
+      "death",
+      "near-death experience",
+      "1960s",
+      "cheating death",
+      "supernatural horror",
+      "horror",
+      "bold",
+      "teen scream"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:51:14Z",
+    "ratings": {
+      "imdb": {
+        "votes": 48233,
+        "value": 7,
+        "type": "user"
+      },
+      "tmdb": {
+        "votes": 605,
+        "value": 6.985,
+        "type": "user"
+      },
+      "rottenTomatoes": {
+        "votes": 0,
+        "value": 93,
+        "type": "user"
+      },
+      "trakt": {
+        "votes": 2553,
+        "value": 7.28829,
+        "type": "user"
+      }
+    },
+    "collection": {
+      "title": "Final Destination Collection",
+      "tmdbId": 8864
+    },
+    "popularity": 278.9729,
+    "lastSearchTime": "2025-06-07T04:58:51Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1070
+  },
+  {
+    "title": "Karate Kid: Legends",
+    "originalTitle": "Karate Kid: Legends",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "新龙威小子",
+        "id": 11773
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "功夫梦2",
+        "id": 11774
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "Kung Fu Kid 2",
+        "id": 11775
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "小子難纏:空手道傳奇",
+        "id": 11776
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "Best Kid: Leyends",
+        "id": 11777
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "ベストキッド・レジェンズ",
+        "id": 11778
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "Karate Kid: Leyendas",
+        "id": 11949
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "功夫夢：傳奇少年",
+        "id": 11950
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "Karate kölyök: Legendák",
+        "id": 11951
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "कराटे किड: लेजेंड्स",
+        "id": 11952
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "Karate Kid: Os Campeões",
+        "id": 11953
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "Karate Kid: Legende",
+        "id": 11954
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "Каратэ-пацан 2",
+        "id": 11955
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "Karate Kid: Efsane Dövüşçüler",
+        "id": 11956
+      },
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1299,
+        "title": "Карате Кід: Легенди",
+        "id": 11957
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "karate kid legends",
+    "sizeOnDisk": 0,
+    "status": "inCinemas",
+    "overview": "After a family tragedy, kung fu prodigy Li Fong is uprooted from his home in Beijing and forced to move to New York City with his mother. When a new friend needs his help, Li enters a karate competition – but his skills alone aren't enough. Li's kung fu teacher Mr. Han enlists original Karate Kid Daniel LaRusso for help, and Li learns a new way to fight, merging their two styles into one for the ultimate martial arts showdown.",
+    "inCinemas": "2025-05-08T00:00:00Z",
+    "digitalRelease": "2025-06-24T00:00:00Z",
+    "releaseDate": "2025-06-24T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1071/poster.jpg?lastWrite=638846529191189842",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/c90Lt7OQGsOmhv6x4JoFdoHzw5l.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1071/fanart.jpg?lastWrite=638839598585144812",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/lAnkMSDISzMYLWICS7m16rSTUHD.jpg"
+      }
+    ],
+    "website": "https://karatekid.movie",
+    "year": 2025,
+    "youTubeTrailerId": "LhRXf-yEQqA",
+    "studio": "Columbia Pictures",
+    "path": "/movies/Karate Kid Legends (2025)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/Karate Kid Legends (2025)",
+    "runtime": 94,
+    "cleanTitle": "karatekidlegends",
+    "imdbId": "tt1674782",
+    "tmdbId": 1011477,
+    "titleSlug": "1011477",
+    "rootFolderPath": "/movies",
+    "certification": "12A",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "keywords": [
+      "new york city",
+      "martial arts",
+      "kung fu",
+      "mentor",
+      "ex-boyfriend",
+      "karate",
+      "beijing, china",
+      "martial arts tournament",
+      "martial arts training",
+      "overprotective mother",
+      "moving to another country"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:51:57Z",
+    "ratings": {
+      "imdb": {
+        "votes": 7553,
+        "value": 6.6,
+        "type": "user"
+      },
+      "tmdb": {
+        "votes": 104,
+        "value": 7,
+        "type": "user"
+      }
+    },
+    "collection": {
+      "title": "The Karate Kid Collection",
+      "tmdbId": 8580
+    },
+    "popularity": 88.1447,
+    "lastSearchTime": "2025-06-06T23:28:00Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1071
+  },
+  {
+    "title": "Mortal Kombat II",
+    "originalTitle": "Mortal Kombat II",
+    "originalLanguage": {
+      "id": 1,
+      "name": "English"
+    },
+    "alternateTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieMetadataId": 1304,
+        "title": "Mortal Kombat 2",
+        "id": 11779
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "mortal kombat ii",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "A sequel to the 2021 film 'Mortal Kombat'.",
+    "inCinemas": "2025-10-22T00:00:00Z",
+    "releaseDate": "2026-01-20T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/1072/poster.jpg?lastWrite=638791843320766891",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/hm69cvqRQJNblKajS6OboXJnV8O.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/1072/fanart.jpg?lastWrite=638840464668202088",
+        "remoteUrl": "https://image.tmdb.org/t/p/original/y08GwxG5uDtHJkOf8w5dnygKyvz.jpg"
+      }
+    ],
+    "website": "",
+    "year": 2025,
+    "youTubeTrailerId": "",
+    "studio": "New Line Cinema",
+    "path": "/movies/Mortal Kombat II (2025)",
+    "qualityProfileId": 6,
+    "hasFile": false,
+    "movieFileId": 0,
+    "monitored": true,
+    "minimumAvailability": "released",
+    "isAvailable": false,
+    "folderName": "/movies/Mortal Kombat II (2025)",
+    "runtime": 0,
+    "cleanTitle": "mortalkombatii",
+    "imdbId": "tt17490712",
+    "tmdbId": 931285,
+    "titleSlug": "931285",
+    "rootFolderPath": "/movies",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Adventure"
+    ],
+    "keywords": [
+      "martial arts",
+      "magic",
+      "ninja fighter",
+      "god",
+      "alternate dimension",
+      "ninja",
+      "fighting",
+      "based on video game",
+      "martial arts tournament",
+      "hand to hand combat"
+    ],
+    "tags": [
+      2
+    ],
+    "added": "2025-04-02T09:52:08Z",
+    "ratings": {
+      "tmdb": {
+        "votes": 0,
+        "value": 0,
+        "type": "user"
+      }
+    },
+    "collection": {
+      "title": "Mortal Kombat (Reboot) Collection",
+      "tmdbId": 931431
+    },
+    "popularity": 3.174,
+    "lastSearchTime": "2025-06-06T16:57:29Z",
+    "statistics": {
+      "movieFileCount": 0,
+      "sizeOnDisk": 0,
+      "releaseGroups": []
+    },
+    "id": 1072
+  }
+]
