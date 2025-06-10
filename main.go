@@ -276,10 +276,6 @@ func (m Movie) IMDB() string {
 	return strconv.FormatFloat(float64(m.Ratings.IMDB.Value)*10, 'f', 0, 64)
 }
 
-func (m Movie) HasReleaseDate() bool {
-	return m.DigitalRelease.Year() > 1000
-}
-
 func (m Movie) Trending() string {
 	return printer.Sprintf("%d", int(m.Popularity))
 }
