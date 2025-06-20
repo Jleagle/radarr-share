@@ -115,9 +115,9 @@ func main() {
 
 func cmpBool(a, b bool) int {
 	switch {
-	case a && !b:
-		return 1
 	case !a && b:
+		return 1
+	case a && !b:
 		return -1
 	default:
 		return 0
