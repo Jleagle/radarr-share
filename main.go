@@ -89,6 +89,7 @@ func main() {
 			return cmp.Or(
 				-cmp.Compare(a.DigitalRelease.Unix(), b.DigitalRelease.Unix()),
 				-cmp.Compare(a.PhysicalRelease.Unix(), b.PhysicalRelease.Unix()),
+				cmpBool(a.HasFile, b.HasFile),
 				cmp.Compare(a.SortTitle, b.SortTitle),
 			)
 		})
@@ -109,6 +110,17 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 		return
+	}
+}
+
+func cmpBool(a, b bool) int {
+	switch {
+	case a && !b:
+		return 1
+	case !a && b:
+		return -1
+	default:
+		return 0
 	}
 }
 
