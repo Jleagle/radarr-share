@@ -91,9 +91,9 @@
             </td>
             <td class="small">
                 {{if ne .IMDBID ""}}
-                    <a href="https://www.imdb.com/title/{{.IMDBID}}/">IMDB</a>
+                    <a href="https://www.imdb.com/title/{{.IMDBID}}/" target="_blank">IMDB</a>
                     {{if ne .YouTubeTrailerID ""}}
-                        / <a href="https://www.youtube.com/watch?v={{.YouTubeTrailerID}}">Trailer</a>
+                        / <a href="https://www.youtube.com/watch?v={{.YouTubeTrailerID}}" target="_blank">Trailer</a>
                     {{end}}
                 {{end}}
             </td>
