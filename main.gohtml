@@ -70,7 +70,7 @@
     </thead>
     <tbody>
     {{ range .Movies }}
-        <tr class="{{if .HasFile}}table-success{{end}}">
+        <tr class="{{if not .HasFile}}table-danger{{end}}">
             <td data-sort="{{.SortTitle}}">
                 <img src="{{.Poster}}" alt="{{.Title}}" class="poster"/>
                 {{.Title}}
