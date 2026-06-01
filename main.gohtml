@@ -62,8 +62,8 @@
 <table class="table table-hover table-striped sortable">
     <thead>
     <tr>
-        <th>Release</th>
         <th>Movie</th>
+        <th>Release</th>
         <th>IMDB</th>
         <th>Rotten</th>
         <th>Trend</th>
@@ -72,12 +72,12 @@
     <tbody>
     {{ range .Movies }}
         <tr class="{{if not .HasFile}}table-danger{{end}}">
-            <td class="small" data-sort="{{.DigitalRelease.Unix}}">{{.Date}}</td>
             <td data-sort="{{.SortTitle}}">
                 <img src="{{.Poster}}" alt="{{.Title}}" class="poster"/>
                 {{.Title}}
                 <small>{{.Overview}}</small>
             </td>
+            <td class="small" data-sort="{{.DigitalRelease.Unix}}">{{.Date}}</td>
             <td class="small" data-sort="{{.Ratings.IMDB.Value}}">
                 <img src="/icons/imdb.svg" alt="IMDB" class="rating" title="IMDB">
                 {{.IMDB}}%
