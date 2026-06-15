@@ -99,8 +99,7 @@ func main() {
 
 		slices.SortFunc(movies, func(a, b Movie) int {
 			return cmp.Or(
-				-cmp.Compare(a.DigitalRelease.Unix(), b.DigitalRelease.Unix()),
-				-cmp.Compare(a.PhysicalRelease.Unix(), b.PhysicalRelease.Unix()),
+				-cmp.Compare(a.EffectiveDate().Unix(), b.EffectiveDate().Unix()),
 				cmpBool(a.HasFile, b.HasFile),
 				cmp.Compare(a.SortTitle, b.SortTitle),
 			)
@@ -289,16 +288,21 @@ func (m Movie) Poster() string {
 	return "https://critics.io/img/movies/poster-placeholder.png"
 }
 
+func (m Movie) EffectiveDate() time.Time {
+	if !m.DigitalRelease.IsZero() {
+		return m.DigitalRelease
+	}
+	if !m.PhysicalRelease.IsZero() {
+		return m.PhysicalRelease
+	}
+	return time.Time{}
+}
+
 func (m Movie) Date() template.HTML {
-
-	if m.DigitalRelease.Unix() > 0 {
-		return template.HTML(m.DigitalRelease.Format("_2 Jan 2006"))
+	effDate := m.EffectiveDate()
+	if !effDate.IsZero() {
+		return template.HTML(effDate.Format("_2 Jan 2006"))
 	}
-
-	if m.PhysicalRelease.Unix() > 0 {
-		return template.HTML(m.PhysicalRelease.Format("_2 Jan 2006"))
-	}
-
 	return "Unknown"
 }
 
