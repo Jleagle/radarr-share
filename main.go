@@ -41,7 +41,7 @@ func main() {
 		return
 	}
 
-	cache, err := ristretto.NewCache(&ristretto.Config{NumCounters: 10, MaxCost: 10, BufferItems: 64})
+	cache, err := ristretto.NewCache(&ristretto.Config{NumCounters: 1000, MaxCost: 100, BufferItems: 64})
 	if err != nil {
 		panic(err)
 	}
@@ -81,7 +81,7 @@ func main() {
 				return
 			}
 
-			cache.SetWithTTL(cacheKey, string(b), 1, time.Hour)
+			cache.SetWithTTL(cacheKey, b, 1, time.Hour)
 
 		} else if val, ok := value.([]byte); ok {
 			b = val
